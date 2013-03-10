@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sounds">
+        <item name="alarm">Alarm</item>
+        <item name="alert">Alert</item>
+        <item name="offhookalert">Off Hook Alert</item>
+        <item name="sysalert">Sys Alert</item>
+    </string-array>
+    <string-array name="sounds_values">
+        <item name="alarm">alarm</item>
+        <item name="alert">alert</item>
+        <item name="offhookalert">offhookalert</item>
+        <item name="sysalert">sysalert</item>
+    </string-array>
+    <string-array name="languages">
+        <item name="english">English</item>
+        <item name="arabic">Arabic</item>
+    </string-array>
+    <string-array name="languages_values">
+        <item name="english">en</item>
+        <item name="arabic">ar</item>
+    </string-array>
+    <string-array name="audio_source_options">
+        <item>Microphone</item>
+        <item>Phone voice (uplink)</item>
+        <item>Phone voice (downlink)</item>
+        <item>Phone voice (uplink/downlink)</item>
+    </string-array>
+    <string-array name="audio_source_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="audio_format_options">
+        <item>.3gpp</item>
+        <item>.mpg</item>
+        <item>.amr</item>
+    </string-array>
+    <string-array name="audio_format_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="autoemail_presets">
+        <item>@string/emailprovider_google</item>
+        <item>@string/emailprovider_msn</item>
+        <item>@string/emailprovider_yahoo</item>
+        <item>@string/emailprovider_manual</item>
+    </string-array>
+    <string-array name="autoemail_presetvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>99</item>
+    </string-array>
+
+</resources>

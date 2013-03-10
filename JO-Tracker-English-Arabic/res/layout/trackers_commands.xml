@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/tracker_commands"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/tracker_vehicle"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/etVehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:enabled="false"
+                android:inputType="text"
+                android:maxLength="15"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/tracker_phone"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:enabled="false"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/tracker_password"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/TextView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/commands_trackers"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnCheckStatus"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_check_status" />
+
+                    <Button
+                        android:id="@+id/btnCheckImei"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_check_imei" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnResetTracker"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_reset_tracker" />
+
+                    <Button
+                        android:id="@+id/btnChangePassword"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_change_password" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnAdminTracker"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_admin_tracker" />
+
+                    <Button
+                        android:id="@+id/btnNoAdminTracker"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_no_admin_tracker" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout116"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnAutoTrack"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_auto_track" />
+
+                    <Button
+                        android:id="@+id/btnNoAutoTrack"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_no_auto_track" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow12323"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnMonitorMode"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_monitor_mode" />
+
+                    <Button
+                        android:id="@+id/btnTackerMode"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_tracker_mode" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnArm"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_arm" />
+
+                    <Button
+                        android:id="@+id/btnDisarm"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_disarm" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnMoveAlert"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_move_alert" />
+
+                    <Button
+                        android:id="@+id/btnNoMoveAlert"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_no_move_alert" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnSpeedAlert"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_overspeed_alert" />
+
+                    <Button
+                        android:id="@+id/btnNoSpeedAlert"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_no_overspeed_alert" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnStopOilPower"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_stop_oil_power" />
+
+                    <Button
+                        android:id="@+id/btnStartOilPower"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_start_olil_power" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnSilentSiren"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_silent_siren" />
+
+                    <Button
+                        android:id="@+id/bntLoudSiren"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_loud_siren" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnAccEnable"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_acc_enable" />
+
+                    <Button
+                        android:id="@+id/btnAccDisable"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_acc_disable" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout121"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnGprsMode"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_gprs_mode" />
+
+                    <Button
+                        android:id="@+id/btnSmsMode"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_sms_mode" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout147"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnAdminIp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_gprs_setting" />
+
+                    <Button
+                        android:id="@+id/btnGprsUnsetting"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_gprs_unsetting" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnApnSetting"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_apn_setting" />
+
+                    <Button
+                        android:id="@+id/btnApnUserPass"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_apn_user_pass" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout33"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnTimeZone"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_time_zone" />
+
+                    <Button
+                        android:id="@+id/btnHelpMe"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_help_me" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout331"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnBegin"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_begin" />
+
+                    <Button
+                        android:id="@+id/btnPhoto"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_photo" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/tableLayout333"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnSdSave"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_sd_save" />
+
+                    <Button
+                        android:id="@+id/btnSdClear"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_sd_clear" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/tableLayout332"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnTemperature"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_temperature" />
+
+                    <Button
+                        android:id="@+id/btnNotemperature"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_no_temperature" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout333"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btnNooil"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmd_no_oil" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnGoBack"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/button_back" >
+                    </Button>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

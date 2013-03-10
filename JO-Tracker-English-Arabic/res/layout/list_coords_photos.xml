@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/widget32"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<TableLayout
+	android:id="@+id/widget67"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+<TableRow
+	android:id="@+id/widget68"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+<ImageView
+	android:id="@+id/photo"
+	android:layout_width="80dp"
+	android:layout_height="80dp" 
+	android:src="@drawable/ic_photos"
+	android:paddingRight="5dp"
+	android:layout_marginTop="5dp"/>
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvVehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/vehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="15" android:paddingLeft="5dp" android:paddingRight="5dp">
+            </TextView>
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:paddingRight="5dp" android:paddingLeft="5dp">
+            </TextView>
+        </TableRow>
+        <TableLayout
+            android:id="@+id/tableLayoutBatSignal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/latitude" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/latitude"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:paddingLeft="5dp" android:paddingRight="5dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvLon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/longitude" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:paddingRight="5dp" android:paddingLeft="5dp">
+            </TextView>
+        </TableRow>
+</TableLayout>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speed" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:paddingLeft="5dp" android:paddingRight="5dp">
+            </TextView>
+        </TableRow>
+        <TableLayout
+            android:id="@+id/tableLayoutDatHor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:paddingLeft="5dp" android:paddingRight="5dp">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tvHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hour" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:paddingLeft="5dp" android:paddingRight="5dp">
+            </TextView>
+        </TableRow>
+</TableLayout>
+        <TableLayout
+            android:id="@+id/tableLayoutBatSignal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+                    android:id="@+id/tvPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/power" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/power"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acc" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/acc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvDoor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/door" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/door"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </TableLayout>
+
+</LinearLayout>
+
+
+</TableRow>
+</TableLayout>
+</LinearLayout>

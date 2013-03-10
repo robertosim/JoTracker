@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="@string/jotracker_key"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TableLayout
+        android:id="@+id/tlTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/trTop"
+            android:layout_width="fill_parent"
+            android:layout_height="320dp"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <AbsoluteLayout
+                android:id="@+id/widget40"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_span="0" >
+
+                <Button
+                    android:id="@+id/btnLock"
+                    android:layout_width="145dp"
+                    android:layout_height="160dp"
+                    android:paddingTop="5dp"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:background="@drawable/button_lock"
+                    android:gravity="top|center"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/btn_lock"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <Button
+                    android:id="@+id/btnUnLock"
+                    android:layout_width="145dp"
+                    android:layout_height="160dp"
+                    android:paddingTop="5dp"
+                    android:layout_x="145dp"
+                    android:layout_y="0dp"
+                    android:background="@drawable/button_unlock"
+                    android:gravity="top|center"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/btn_unlock"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <Button
+                    android:id="@+id/btnCheck"
+                    android:layout_width="145dp"
+                    android:layout_height="160dp"
+                    android:paddingTop="5dp"
+                    android:layout_x="0dp"
+                    android:layout_y="160dp"
+                    android:background="@drawable/button_check"
+                    android:gravity="bottom|center"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/btn_check"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <Button
+                    android:id="@+id/btnGps"
+                    android:layout_width="145dp"
+                    android:layout_height="160dp"
+                    android:paddingTop="5dp"
+                    android:layout_x="145dp"
+                    android:layout_y="160dp"
+                    android:background="@drawable/button_gps"
+                    android:gravity="bottom|center"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/btn_track"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <CheckBox
+                    android:id="@+id/cbStartStop"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_x="94dp"
+                    android:layout_y="113dp"
+                    android:button="@drawable/checkbox_start_stop" />
+            </AbsoluteLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<string-array name="sounds">
+		<item name="alarm">Alarm</item>
+		<item name="alert">Alert</item>
+		<item name="offhookalert">Off Hook Alert</item>
+		<item name="sysalert">Sys Alert</item>
+	</string-array>
+	
+	<string-array name="sounds_values">
+		<item name="alarm">alarm</item>
+		<item name="alert">alert</item>
+		<item name="offhookalert">offhookalert</item>
+		<item name="sysalert">sysalert</item>
+	</string-array>
+
+</resources>

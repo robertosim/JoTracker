@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="clip_vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:scrollbars="vertical" >
+
+            <TextView
+                android:id="@+id/tvAddTracker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tracker_add"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tVPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tracker_phone" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/eTPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:paddingRight="5dp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_search" >
+            </Button>
+
+            <TextView
+                android:id="@+id/tvImei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tracker_imei" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/eTImei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="phone"
+                android:maxLength="15" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/eTName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvLicenseNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/license_number" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/eTLicenseNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false" >
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/tVVehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tracker_vehicle" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/eTVehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:maxLength="30" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tVDescrip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tracker_description" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/eTDescrip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:maxLength="30" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tVPass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tracker_password" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/eTPass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:maxLength="6" >
+
+                <requestFocus>
+                </requestFocus>
+            </EditText>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnAddTracker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="@string/button_add" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="@string/button_clear" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnGoBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/button_cancel" >
+                    </Button>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
